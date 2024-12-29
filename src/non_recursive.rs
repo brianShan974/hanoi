@@ -17,7 +17,7 @@ pub fn hanoi(n: usize, from: char, to: char, via: char) {
     }];
 
     while let Some(top_frame) = frames.last() {
-        let current_top_frame = top_frame.clone();
+        let current_top_frame = top_frame;
         let current_top_index = frames.len() - 1;
 
         match current_top_frame.pc {
